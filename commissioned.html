@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="Michael ZT Rose" content="Michael ZT Rose">
+    	<meta name="keywords" content="painter, artist, Michael Rose">
+	
+		<title>Commissions</title>
+		
+		<!-- external CSS link -->
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+
+
+
+	</head>
+	<body>
+
+		<header>
+			<a href="index.html"><img src="images/logo.png"></a>
+			<nav>
+				
+				<ul>
+					<li><a href="visual_index.html">Visual Art</a></li>
+					<li><a href="audio.html">Audio</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+
+			<div class="mobile-nav">
+				<ul>
+					<li><a href="visual_index.html">Visual Art</a></li>
+					<li><a href="audio.html">Audio</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+
+			</div>
+		</header>
+
+	<div id="slider" class="flexslider">
+  <ul class="slides">
+    <li>
+      <img src="images/C1.jpg" />
+      <p class="flex-caption">Ink on Paper, 36" x 24", 2011</p>
+    </li>
+    <li>
+      <img src="images/C2.jpg" />
+      <p class="flex-caption">Ink on Paper, 36" x 24", 2011</p>
+    </li>
+    <li>
+      <img src="images/C3.jpg" />
+      <p class="flex-caption">Ink on Paper, 36" x 24", 2011</p>
+    </li>
+    <li>
+      <img src="images/C4.jpg" />
+      <p class="flex-caption">Ink on Paper, 55" x 29", 2012</p>
+    </li>
+    <li>
+      <img src="images/C5.jpg" />
+      <p class="flex-caption">Ink on Paper, 45" x 36", 2010</p>
+    </li>
+     <li>
+      <img src="images/C6.jpg" />
+      <p class="flex-caption">Maddy, Charcoal on Paper, 18" x 24" 2010</p>
+    </li>
+    <li>
+      <img src="images/C7.jpg" />
+      <p class="flex-caption">Charcoal on Paper, 18" x 24", 2010</p>
+    </li>
+   
+  </ul>
+</div>
+
+<div id="carousel" class="flexslider">
+  <ul class="slides">
+     <li>
+      <img src="images/C1.1.jpg" />
+    </li>
+    <li>
+      <img src="images/C2.1.jpg" />
+    </li>
+    <li>
+      <img src="images/C3.1.jpg" />
+    </li>
+    <li>
+      <img src="images/C4.1.jpg" />
+    </li>
+    <li>
+      <img src="images/C5.1.jpg" />
+    </li>
+     <li>
+      <img src="images/C6.1.jpg" />
+    </li>
+    <li>
+      <img src="images/C7.1.jpg" />
+    </li>
+     
+     
+  </ul>
+</div>
+		
+<!-- jQuery -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+
+  <!-- FlexSlider -->
+  <script defer src="js/jquery.flexslider.js"></script>
+
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+   $(window).load(function() {
+ 
+  $('#carousel').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    itemWidth: 210,
+    itemMargin: 5,
+    asNavFor: '#slider'
+  });
+   
+  $('#slider').flexslider({
+    animation: "slide",
+    controlNav: false,
+    animationLoop: false,
+    slideshow: false,
+    sync: "#carousel"
+  });
+});
+  </script>
+
+
+
+	</body>
+</html>
